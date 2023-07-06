@@ -1,0 +1,18 @@
+.LoginWrapper{
+    padding-top: 60px;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LoginBox{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    width: 500px;
+    background-color: white;
+    height: 500px;
+    box-shadow: rgba(226, 226, 226, 0.19) 0px 10px 20px, rgba(201, 193, 193, 0.23) 0px 6px 6px;
+    border-radius: 20px;
+}
