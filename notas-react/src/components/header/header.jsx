@@ -8,7 +8,9 @@ const Header = () => {
         <>
             <div className='HeaderWrapper'>
                 <div className='LogoWrapper'>
-                    <Logo color={"#213547"} width={50} height={50}></Logo>
+                    <Link to={"/"}>
+                        <Logo color={"#213547"} width={50} height={50}></Logo>
+                    </Link> 
                     <a>Las Notas</a>
                 </div>
                 <div className='MenuWrapper'>

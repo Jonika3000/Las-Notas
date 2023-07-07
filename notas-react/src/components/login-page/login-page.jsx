@@ -1,25 +1,19 @@
 import { Button, Form } from 'react-bootstrap';
 import './login-page.css'
-import { useState } from 'react';
-import axios from '../../api/axios';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react'; 
+import useAuthContext from '../../context/auth-context';
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const navigate = useNavigate(); 
-   
+    const {login, errors} = useAuthContext();
+
+
     const handleSubmit = async (event) => {
         event.preventDefault(); 
-        try { 
-           await axios.post('/login',{email,password});
-           setEmail("");
-           setPassword("");
-            navigate("/");
-        }
-        catch (error) {
-            console.log(error);
-        }  
+        setEmail("");
+        setPassword("");
+        login({ email, password })
     };
  
     return (
@@ -48,7 +42,7 @@ const LoginPage = () => {
                                 required
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}>
-                            </Form.Control>
+                            </Form.Control> 
                         </Form.Group>
                         <Button type='submit'>Login</Button>
                     </Form>

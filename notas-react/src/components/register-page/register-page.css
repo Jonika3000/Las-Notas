@@ -1,4 +1,4 @@
-.LoginWrapper {
+.RegisterWrapper {
     padding-top: 60px;
     min-height: 90vh;
     width: 100%;
@@ -8,7 +8,7 @@
     background-color: #213547;
 }
 
-.LoginBox {
+.RegisterBox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,16 +18,17 @@
     box-shadow: rgba(226, 226, 226, 0.19) 0px 10px 20px, rgba(201, 193, 193, 0.23) 0px 6px 6px;
     border-radius: 20px;
 }
-.form-label {
+.form-label{ 
     font-size: 24px;
 }
-
-.btn {
-    margin-top: 1rem;
-    background-color: #213547;
-    border-color: black;
+.btn{
+margin-top: 1rem;
+background-color: #213547;
+border-color: black;
 }
-
-.btn:hover {
+.btn:hover{
     background-color: #424adb;
+}
+.smallLabel{
+    font-size: 14px;
 }

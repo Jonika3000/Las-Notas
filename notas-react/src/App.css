@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+:root {
+    color: #424adb;
+    background-color: #213547;
+    min-height: 100vh;
+    font-synthesis: none;
+}
+
+* {
+    font-family: 'Belanosima', sans-serif;
+    padding: 0;
+    margin: 0;
+}
