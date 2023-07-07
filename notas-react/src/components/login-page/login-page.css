@@ -1,4 +1,4 @@
-.LoginWrapper{
+.LoginWrapper {
     padding-top: 60px;
     min-height: 90vh;
     width: 100%;
@@ -6,10 +6,11 @@
     align-items: center;
     justify-content: center;
 }
-.LoginBox{
+
+.LoginBox {
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
     width: 500px;
     background-color: white;
     height: 500px;
